@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Viga", serif;
+  color: white;
+}
+
+body {
+  background: #000000;
+}
+
+header {
+  background: $second-color;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  a {
+    position: relative;
+    margin-right: 80px;
+    text: {
+      transform: uppercase;
+      decoration: none;
+    }
+    font: {
+      family: "Inter";
+      style: normal;
+      weight: 700;
+      size: 16px;
+    }
+    cursor: pointer;
+
+    img {
+      float: right;
+    }
+  }
+
+  nav {
+    padding: 37px 170px 38px 170px;
+  }
+}
+
+div {
+  background: red;
+  width: 100%;
+  height: 500px;
+}
