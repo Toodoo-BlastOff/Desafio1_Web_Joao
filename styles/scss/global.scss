@@ -38,8 +38,23 @@ header {
   }
 
   nav {
-    padding: 37px 170px 38px 170px;
+    padding: $default-padding;
   }
+}
+
+footer {
+  padding: $default-padding;
+  display: flex;
+  p {
+    font: {
+      family: "Inter";
+      style: normal;
+      weight: 400;
+      size: 14px;
+    }
+  }
+  justify-content: space-between;
+  align-items: center;
 }
 
 div {

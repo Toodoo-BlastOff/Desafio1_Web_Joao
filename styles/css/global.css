@@ -34,6 +34,19 @@ header nav {
   padding: 37px 170px 38px 170px;
 }
 
+footer {
+  padding: 37px 170px 38px 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 div {
   background: red;
   width: 100%;
