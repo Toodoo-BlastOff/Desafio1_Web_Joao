@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixins.scss";
 
 * {
   margin: 0;
@@ -40,6 +41,7 @@ header {
   nav {
     padding: $default-padding;
   }
+  z-index: 9999;
 }
 
 footer {
@@ -57,8 +59,103 @@ footer {
   align-items: center;
 }
 
-div {
-  background: red;
+.header-dummy {
+  height: 100px;
+}
+
+.main-content {
+  height: 1440px;
+  padding: $default-padding;
+  padding-top: 200px;
+}
+
+.move-down {
   width: 100%;
-  height: 500px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 70px;
+      height: 70px;
+      background: $green-background;
+      opacity: 0;
+      transition: opacity 0.4s;
+      border-radius: 49%;
+      z-index: -100;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.inner-content {
+  position: absolute;
+  p {
+    max-width: 584px;
+    font: {
+      family: "Inter";
+      style: normal;
+      weight: 400;
+      size: 21px;
+    }
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    margin-bottom: 25px;
+  }
+}
+
+.pre-info {
+  font: {
+    family: "Rubik";
+    style: normal;
+    weight: 300;
+    size: 25px;
+  }
+  line-height: 30px;
+
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 105px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
