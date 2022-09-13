@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+.main-content {
+  background: url("../../assets/images/space-galaxy-landscape.png");
+  background-repeat: no-repeat;
+  background-size: 100%; //propotional resize
+}
+
+.rocket-launches {
+  padding: $default-padding;
+
+  h3 {
+    letter-spacing: 0.05em;
+    max-width: 415px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+}
+
+#rocket-list {
+  min-width: 236px;
+}
+
+.rocket-card {
+  position: relative;
+  display: flex;
+  min-height: 235px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    position: absolute;
+    bottom: 150px;
+  }
+
+  h4 {
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .launch-info {
+    margin-top: 50px;
+    color: $primary-color;
+  }
+}
+
+.pos-info {
+  max-width: 538px;
+
+  b {
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: $primary-color;
+  }
+}

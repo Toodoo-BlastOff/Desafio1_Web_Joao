@@ -1,8 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Viga;
+  src: url("../../assets/fonts/Viga-Regular.otf") format("opentype");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Viga", serif;
+  list-style-type: none;
   color: white;
 }
 
@@ -15,6 +21,7 @@ header {
   position: fixed;
   height: 100px;
   width: 100%;
+  z-index: 9999;
 }
 header a {
   position: relative;
@@ -34,10 +41,298 @@ header nav {
   padding: 37px 170px 38px 170px;
 }
 
-div {
-  background: red;
+footer {
+  border-top: 1px solid white;
+  padding: 37px 170px 38px 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.header-dummy {
+  height: 100px;
+}
+
+.main-content {
+  min-height: 1150px;
+  padding: 37px 170px 38px 170px;
+  padding-top: 200px;
+}
+
+.move-down {
   width: 100%;
-  height: 500px;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.move-down p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+.move-down p::before {
+  content: "​";
+  content: "​"/"SCROLL DOWN";
+  alt: "SCROLL DOWN";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 4.98s linear 1s infinite forwards;
+}
+.move-down p::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 0.1ch;
+  border-right: 1ch solid currentColor;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@keyframes typed-0 {
+  0%, 2.0070321285% {
+    content: "​S";
+    content: "​S"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  2.0080321285%, 4.015064257% {
+    content: "​SC";
+    content: "​SC"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  4.016064257%, 6.0230963855% {
+    content: "​SCR";
+    content: "​SCR"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  6.0240963855%, 8.0311285141% {
+    content: "​SCRO";
+    content: "​SCRO"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  8.0321285141%, 10.0391606426% {
+    content: "​SCROL";
+    content: "​SCROL"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  10.0401606426%, 12.0471927711% {
+    content: "​SCROLL";
+    content: "​SCROLL"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  12.0481927711%, 14.0552248996% {
+    content: "​SCROLL ";
+    content: "​SCROLL "/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  14.0562248996%, 16.0632570281% {
+    content: "​SCROLL D";
+    content: "​SCROLL D"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  16.0642570281%, 18.0712891566% {
+    content: "​SCROLL DO";
+    content: "​SCROLL DO"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  18.0722891566%, 20.0793212851% {
+    content: "​SCROLL DOW";
+    content: "​SCROLL DOW"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  20.0803212851%, 63.8544216867% {
+    content: "​SCROLL DOWN";
+    content: "​SCROLL DOWN"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  63.8554216867%, 65.4608473896% {
+    content: "​SCROLL DOW";
+    content: "​SCROLL DOW"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  65.4618473896%, 67.0672730924% {
+    content: "​SCROLL DO";
+    content: "​SCROLL DO"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  67.0682730924%, 68.6736987952% {
+    content: "​SCROLL D";
+    content: "​SCROLL D"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  68.6746987952%, 70.280124498% {
+    content: "​SCROLL ";
+    content: "​SCROLL "/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  70.281124498%, 71.8865502008% {
+    content: "​SCROLL";
+    content: "​SCROLL"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  71.8875502008%, 73.4929759036% {
+    content: "​SCROL";
+    content: "​SCROL"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  73.4939759036%, 75.0994016064% {
+    content: "​SCRO";
+    content: "​SCRO"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  75.1004016064%, 76.7058273092% {
+    content: "​SCR";
+    content: "​SCR"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  76.7068273092%, 78.312253012% {
+    content: "​SC";
+    content: "​SC"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  78.313253012%, 79.9186787149% {
+    content: "​S";
+    content: "​S"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+  79.9196787149%, 100% {
+    content: "​";
+    content: "​"/"SCROLL DOWN";
+    alt: "SCROLL DOWN";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+.move-down button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+.move-down button:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(90deg, #01eabd 0%, #01ac8b 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  border-radius: 49%;
+  z-index: -100;
+}
+.move-down button:hover:before {
+  opacity: 1;
+}
+
+.inner-content {
+  min-height: 450px;
+}
+.inner-content p {
+  max-width: 584px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.025em;
+  margin-bottom: 25px;
+}
+
+.pre-info {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.pos-info {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card {
+  width: 260px;
+  padding: 27px 29px;
+  border-radius: 15px;
+  background: linear-gradient(146.29deg, rgba(88, 88, 88, 0.76) 0%, rgba(97, 97, 97, 0.09) 95.77%);
+}
+.card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.card button {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #01eabd 0%, #007c64 102.45%);
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.fader {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  bottom: -290px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.card > * {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: 100;
+  line-height: 105px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
 }
 
 /*# sourceMappingURL=global.css.map */
