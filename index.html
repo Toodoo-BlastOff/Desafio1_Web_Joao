@@ -7,10 +7,6 @@
     <title>Desafio Blast-off (Curiosidades) | Início</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Viga"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
     <link
@@ -24,9 +20,9 @@
   <body>
     <header>
       <nav>
-        <a href="/html/">Início</a>
-        <a href="/js/">O espaço</a>
-        <a href="/python/">Inteligência artificial</a>
+        <a href="#">Início</a>
+        <a href="/pages/space.html">O espaço</a>
+        <a href="/pages/neural-network.html">Inteligência artificial</a>
         <a id="toodoo-logo" href="https://toodoo.com.br/en/home-en/"
           ><img src="./assets/toodoo-logo.svg" alt="Toodoo Logo"
         /></a>
@@ -36,7 +32,7 @@
       <div class="header-dummy"></div>
       <div class="main-content">
         <div class="inner-content">
-          <p class="pre-info">Desafio BlastOff</p>
+          <strong class="pre-info">Desafio BlastOff</strong>
           <h1>Curiosidades</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -46,8 +42,8 @@
           <img src="./assets/images/blast-off-logo.png" alt="Blastoff Logo" />
         </div>
         <div class="move-down">
-          <p>SCROLL DOWN</p>
-          <button class="scroll-down">
+          <p></p>
+          <button class="scroll-down" id="scroll-down-button">
             <img
               src="./assets/icons/arrow-down.svg"
               alt="Scroll down"
@@ -57,19 +53,86 @@
           </button>
         </div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="second-content">
+        <div>
+          <img src="./assets/images/astronaut.png" alt="Astronauta" />
+        </div>
+        <div>
+          <strong class="pre-info">Como surgiu?</strong>
+          <h3>Curiosidades</h3>
+          <p class="pos-info">
+            Nascido com o objetivo de trazer informações de maneira simples e
+            direta aos seus leitores, com temas diversificados e buscando sempre
+            relacionar diferentes áreas. O projeto <b>Curiosidades</b> da
+            Toodoo, criado a partir do BlastOff, traz conteúdos escritos por
+            professores, físicos, executivos, designers, desenvolvedores de
+            software e hardware, especialistas no âmbito geral afim de de prover
+            conteúdo de confiança e sempre atualizado.
+          </p>
+        </div>
+      </div>
+      <div class="subjects">
+        <strong class="pre-info">Venha aprender</strong>
+        <h3>O QUE ABORDAREMOS?</h3>
+        <ul>
+          <li class="card">
+            <img src="./assets/icons/rocket.svg" />
+            <h5>Astronomia</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. ncididunt ut labore et dolore.
+            </p>
+            <button>QUERO CONHECER</button>
+          </li>
+          <li class="card">
+            <img src="./assets/icons/globe.svg" />
+            <h5>Inteligência artificial</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. ncididunt ut labore et dolore.
+            </p>
+            <button>QUERO CONHECER</button>
+          </li>
+          <li class="card">
+            <img src="./assets/icons/rocket.svg" />
+            <h5>Astronomia</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. ncididunt ut labore et dolore.
+            </p>
+            <button>QUERO CONHECER</button>
+          </li>
+          <li class="card">
+            <img src="./assets/icons/globe.svg" />
+            <h5>Inteligência artificial</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. ncididunt ut labore et dolore.
+            </p>
+            <button>QUERO CONHECER</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="news-letter">
+        <div class="blur-ball"></div>
+        <div class="news-letter-box">
+          <strong class="pre-info">NEWSLETTER</strong>
+          <h3>QUER RECEBER MAIS CONTEÚDO COMO ESTE?</h3>
+          <p class="pos-info">Assine nossa newsletter!</p>
+          <form>
+            <input type="email" placeholder="Seu e-mail aqui" />
+            <button>ASSINAR!</button>
+          </form>
+          <p class="pos-info">você poderá cancelar quando quiser</p>
+        </div>
+        <div class="blur-ball" style="bottom: 80px; right: 150px"></div>
+      </div>
     </main>
     <footer>
       <p>Copyright © 2022 Toodoo Desenvolvimento de Software LTDA.</p>
       <img src="./assets/images/blast-off-logo.png" alt="Blastoff Logo" />
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

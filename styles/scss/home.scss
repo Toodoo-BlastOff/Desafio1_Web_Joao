@@ -1,5 +1,130 @@
+@import "./variables.scss";
+
 .main-content {
   background: url("../../assets/images/home-galaxy-landscape.png");
   background-repeat: no-repeat;
   background-size: 100%; //propotional resize
+}
+
+.second-content {
+  display: flex;
+  width: 100%;
+  height: 504px;
+  padding: $default-padding;
+
+  justify-content: center;
+
+  h3 {
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+  }
+
+  img {
+    margin-right: 27px;
+  }
+}
+
+.pos-info {
+  max-width: 538px;
+
+  b {
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: $primary-color;
+  }
+}
+
+.subjects {
+  padding: $default-padding;
+
+  h3 {
+    margin-bottom: 55px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul li {
+    margin-right: 20px;
+  }
+}
+
+.news-letter {
+  position: relative;
+  width: 100%;
+  padding: $default-padding;
+}
+
+.news-letter-box {
+  display: flex;
+  height: 391px;
+  padding: 49px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+    146.29deg,
+    rgba(88, 88, 88, 0.76) 0%,
+    rgba(97, 97, 97, 0.09) 95.77%
+  );
+  border-radius: 15px;
+  margin-bottom: 100px;
+
+  h3 {
+    max-width: 400px;
+  }
+
+  .pre-info {
+    margin-bottom: 5px;
+  }
+
+  .pos-info {
+    margin-bottom: 32px;
+  }
+
+  form {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  input {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.11);
+    border: 1px solid #01eabd;
+    border-radius: 6px;
+    padding: 20px 16px;
+    outline: none;
+    &::placeholder {
+      font: {
+        family: "Inter";
+        style: normal;
+        weight: 400;
+        size: 14px;
+        line-height: 22px;
+        color: white;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    right: -5px;
+    padding: 20px;
+    background: $green-background;
+    border: 1px solid #01eabd;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+  }
+}
+
+.blur-ball {
+  position: absolute;
+  width: 143px;
+  height: 143px;
+
+  background: rgba(1, 234, 189, 0.5);
+  filter: blur(100px);
 }
