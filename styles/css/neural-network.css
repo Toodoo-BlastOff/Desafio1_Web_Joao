@@ -26,10 +26,8 @@
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
 }
 
-.teste {
-  height: 500px;
-  width: 100%;
-  background: black;
+.about {
+  padding: 37px 170px 38px 170px;
 }
 
 /*# sourceMappingURL=neural-network.css.map */
