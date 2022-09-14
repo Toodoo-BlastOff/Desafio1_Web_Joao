@@ -9,12 +9,10 @@
   display: flex;
   align-items: center;
 }
+
 .inner-content img {
   border-radius: 50%;
   margin-right: 50px;
-}
-.inner-content h1 {
-  max-width: 200px;
 }
 
 .fader {
@@ -29,9 +27,15 @@
 .about {
   padding: 37px 170px 38px 170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
-.about h2 {
+.about img {
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+h2 {
   margin-bottom: 20px;
   font-family: "Viga";
   font-style: normal;
@@ -57,7 +61,7 @@
   text-transform: uppercase;
 }
 
-.description {
+.about-rocket-description {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -66,34 +70,70 @@
   /* or 144% */
   text-align: justify;
   letter-spacing: 0.025em;
-}
-.description a {
-  font-style: italic;
-  text-decoration: none;
-  color: #01eabd;
+  max-width: 600px;
 }
 
-.systems {
+.launch-info {
   padding: 37px 170px 38px 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-.systems p {
-  margin-bottom: 70px;
+.launch-info h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.launch-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+.launch-info table thead {
+  background: #3d3c3c;
+}
+.launch-info table th {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.launch-info table td {
+  font-family: "Inter";
+  line-height: 22px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+.launch-info table .success {
+  color: #01eabd;
+}
+.launch-info table .error {
+  color: #ff0000;
+}
+.launch-info table th,
+.launch-info table td {
+  padding: 15px;
+}
+.launch-info table th:last-child,
+.launch-info table td:last-child {
+  max-width: 97px;
+}
+.launch-info table tbody {
+  background: #4f4f4f;
 }
 
-.systems-perceptron {
+.rocket-video {
   display: flex;
   justify-content: center;
-  gap: 70px;
-}
-.systems-perceptron .image-description {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.025em;
-  margin-top: 20px;
+  align-items: center;
+  gap: 100px;
+  margin-top: 80px;
 }
 
 footer {
@@ -101,3 +141,5 @@ footer {
 }
 
 /*# sourceMappingURL=neural-network.css.map */
+
+/*# sourceMappingURL=rocket.css.map */
