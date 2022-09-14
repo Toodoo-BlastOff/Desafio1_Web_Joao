@@ -175,6 +175,7 @@ footer {
   width: 260px;
   padding: 27px 29px;
   border-radius: 15px;
+  border: 1px solid #3d3c3c;
   background: linear-gradient(
     146.29deg,
     rgba(88, 88, 88, 0.76) 0%,
@@ -197,6 +198,12 @@ footer {
     padding: 10px;
     cursor: pointer;
     margin-top: 15px;
+
+    &:disabled {
+      color: #01ac8b;
+      background: transparent;
+      border: 1px solid #01ac8b;
+    }
   }
 }
 
