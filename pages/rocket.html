@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio Blast-off (Curiosidades) | Foguete X</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Viga"
-    />
+    <title>Desafio Blast-off (Curiosidades) | Foguete -</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
@@ -17,19 +13,119 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Rubik"
     />
-    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="../styles/css/global.css" />
+    <link rel="stylesheet" href="../styles/css/rocket.css" />
+    <link rel="icon" href="../assets/favicon.png" sizes="32x32" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../js/rocket.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="/html/">Início</a>
-        <a href="/js/">O espaço</a>
-        <a href="/python/">Inteligência artificial</a>
+        <a href="/index.html">Início</a>
+        <a href="/pages/space.html">O espaço</a>
+        <a href="/pages/neural-network.html">Inteligência artificial</a>
         <a id="toodoo-logo" href="https://toodoo.com.br/en/home-en/"
-          ><img src="./assets/toodoo-logo.svg" alt="Toodoo Logo"
+          ><img src="../assets/toodoo-logo.svg" alt="Toodoo Logo"
         /></a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="header-dummy"></div>
+      <div class="main-content">
+        <div class="inner-content">
+          <img
+            src="../assets/images/default-rocket-loading-image.png"
+            alt="Rocket"
+            id="rocket"
+            width="450"
+            height="450"
+          />
+          <div>
+            <strong class="pre-info">Desafio BlastOff</strong>
+            <h1 id="rocket-title">Carregando...</h1>
+          </div>
+        </div>
+        <div class="move-down">
+          <p></p>
+          <button class="scroll-down" id="scroll-down-button">
+            <img
+              src="../assets/icons/arrow-down.svg"
+              alt="Scroll down"
+              width="24"
+              height="12"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="fader"></div>
+      <section class="about" id="about">
+        <div class="about-rocket">
+          <p class="pre-title">SOBRE</p>
+          <h2 id="about-rocket-name">Carregando...</h2>
+          <p class="about-rocket-description" id="rocket-description">
+            O Perceptron foi criado em 1958 por Rosenblatt, sendo a forma mais
+            simples da configuração de uma rede neural artificial, uma vez que é
+            constituída de uma única camada neural e de um único neurônio. A
+            figura ao lado ilustra a rede Perceptron de única camada, onde
+            podemos ter N entradas, mas apenas uma única saída com um valor de 0
+            e 1 ou de -1 e 1.
+          </p>
+        </div>
+      </section>
+      <section class="launch-info">
+        <h4>informações do lançamento</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>LAUNCH DATE</th>
+              <th>LAUNCH SITE</th>
+              <th>LAUNCH STATUS</th>
+              <th>TYPE</th>
+              <th>FIRST STAGE</th>
+              <th>SECOND STAGE</th>
+              <th>DETAILS</th>
+            </tr>
+          </thead>
+          <tbody id="launchments">
+            <tr>
+              <td>01-03-2013</td>
+              <td>CCAFS SLC 40</td>
+              <td class="success">Success</td>
+              <td>v1.0</td>
+              <td>Cores: B0007</td>
+              <td>Payloads: 677kg</td>
+              <td>Last launch of the original Falcon 9 v1.0 launch vehicle</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="rocket-video" id="rocket-video">
+        <iframe
+          id="youtube-video"
+          width="524"
+          height="335"
+          src="https://www.youtube.com/embed/ik0ElKl5kW4"
+          title="SpaceX CRS-2 Full Webcast"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <p class="pre-title">Assista</p>
+          <h2 id="about-rocket-name">RELEMBRE ESTE MOMENTO</h2>
+          <p class="about-rocket-description" id="rocket-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation .
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2022 Toodoo Desenvolvimento de Software LTDA.</p>
+      <img src="../assets/images/blast-off-logo.png" alt="Blastoff Logo" />
+    </footer>
+    <script src="../js/global.js"></script>
   </body>
 </html>

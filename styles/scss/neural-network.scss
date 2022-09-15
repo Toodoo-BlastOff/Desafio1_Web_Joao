@@ -37,4 +37,81 @@
 
 .about {
   padding: $default-padding;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    margin-bottom: 20px;
+    font-family: "Viga";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+.about-perceptron {
+  margin-right: 40px;
+  max-width: 700px;
+}
+
+.pre-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  text-align: justify;
+  letter-spacing: 0.025em;
+
+  a {
+    font-style: italic;
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.systems {
+  padding: $default-padding;
+  text-align: center;
+
+  p {
+    margin-bottom: 70px;
+  }
+}
+
+.systems-perceptron {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+
+  .image-description {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+
+    letter-spacing: 0.025em;
+    margin-top: 20px;
+  }
+}
+
+footer {
+  margin-top: 100px;
 }
