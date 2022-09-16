@@ -11,6 +11,11 @@
   padding: 37px 170px 38px 170px;
   justify-content: center;
 }
+@media (max-width: 750px) {
+  .second-content {
+    display: block;
+  }
+}
 .second-content h3 {
   letter-spacing: 0.05em;
   margin-bottom: 15px;
@@ -37,6 +42,11 @@
 .subjects ul {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 750px) {
+  .subjects ul {
+    display: block;
+  }
 }
 .subjects ul li {
   margin-right: 20px;

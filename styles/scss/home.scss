@@ -14,6 +14,10 @@
 
   justify-content: center;
 
+  @media (max-width: 750px) {
+    display: block;
+  }
+
   h3 {
     letter-spacing: 0.05em;
     margin-bottom: 15px;
@@ -44,6 +48,10 @@
   ul {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 750px) {
+      display: block;
+    }
   }
 
   ul li {
