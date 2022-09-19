@@ -59,7 +59,7 @@ async function loadRockets() {
       const button = document.createElement("button");
 
       button.onclick = function () {
-        window.location.href = `/pages/rocket.html?id=${rocket.rocket_id}`;
+        window.location.href = `./rocket.html?id=${rocket.rocket_id}`;
       };
 
       button.textContent = rocket.active ? "ACTIVE" : "INACTIVE";

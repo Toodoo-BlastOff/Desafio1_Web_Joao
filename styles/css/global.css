@@ -40,6 +40,15 @@ header a img {
 header nav {
   padding: 37px 170px 38px 170px;
 }
+@media (max-width: 750px) {
+  header nav {
+    text-align: center;
+  }
+  header nav a {
+    display: block;
+    padding: 30px;
+  }
+}
 
 footer {
   border-top: 1px solid white;
@@ -283,9 +292,23 @@ footer p {
   padding: 27px 29px;
   border-radius: 15px;
   border: 1px solid #3d3c3c;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(146.29deg, rgba(88, 88, 88, 0.76) 0%, rgba(97, 97, 97, 0.09) 95.77%);
 }
+.card h5 {
+  font-family: "Viga";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.card img {
+  width: 30%;
+}
 .card p {
+  flex-grow: 1;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;

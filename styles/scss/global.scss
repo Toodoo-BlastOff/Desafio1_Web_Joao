@@ -48,6 +48,14 @@ header {
 
   nav {
     padding: $default-padding;
+
+    @media (max-width: 750px) {
+      text-align: center;
+      a {
+        display: block;
+        padding: 30px;
+      }
+    }
   }
   z-index: 9999;
 }
@@ -176,13 +184,30 @@ footer {
   padding: 27px 29px;
   border-radius: 15px;
   border: 1px solid #3d3c3c;
+  display: flex;
+  flex-direction: column;
+
   background: linear-gradient(
     146.29deg,
     rgba(88, 88, 88, 0.76) 0%,
     rgba(97, 97, 97, 0.09) 95.77%
   );
 
+  h5 {
+    font-family: "Viga";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 30%;
+  }
+
   p {
+    flex-grow: 1;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
